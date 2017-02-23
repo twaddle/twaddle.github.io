@@ -1,0 +1,100 @@
+@import "../node_modules/bootstrap/less/bootstrap";
+@import "../node_modules/font-awesome/less/font-awesome.less";
+
+@twitch-purple: #6441A5;
+@twitch-light-purple: #B9A3E3;
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrap {
+  min-height: 95%;
+  /* equal to footer height */
+  margin-bottom: -220px;
+}
+.wrap:after {
+  content: "";
+  display: block;
+}
+.footer, .wrap:after {
+  height: 220px;
+}
+
+.label-twitch {
+  .label-variant(@twitch-purple);
+}
+
+.color-twitch {
+  color: @twitch-purple;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.panel-twitch {
+  .panel-variant(@twitch-light-purple; @twitch-purple; white; @twitch-light-purple) !important;
+  .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+}
+
+.list-group.credits {
+  .list-group-item {
+    padding: 5px 7.5px;
+  }
+}
+
+.individual-downloads-list-group-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.downloads-row {
+  > *:not(:nth-last-child(-n+2)) {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      padding-bottom: 50px;
+    }
+  }
+
+  > *:not(:last-child) {
+    @media (max-width: @screen-xs-max) {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.panel-label {
+  margin: auto;
+  @media (max-width: @screen-xs-max) {
+    width: 100%;
+  }
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    width: 75%;
+  }
+  @media (min-width: @screen-md-min) {
+    width: 50%;
+  }
+
+  > .panel-body {
+    padding: 0;
+  }
+}
+
+.container {
+  padding-top: 15px;
+}
+
+.header-row {
+  position: relative;
+}
+
+.float-right {
+  position: absolute;
+  right: 0;
+}
