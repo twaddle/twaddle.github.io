@@ -2,16 +2,16 @@ import React from 'react';
 
 
 const Header = () => (
-    <div className="header-row row">
-        <div className="col-xs-12">
-            <h1>
+    <div className="row">
+        <div className="col-xs-6">
+            <div className="h2">
                 <span className="label label-twitch">Twaddle</span>
-            </h1>
+            </div>
         </div>
-        <div className="h3 float-right col-xs-12 text-right">
-            Latest Version:
-            <br className="visible-xs-block" />
-            <span className="label label-default margin-left-10">1.0.0</span>
+        <div className="col-xs-6 text-right">
+            <div className="h3">
+                <span className="label label-default">v1.0.0</span>
+            </div>
         </div>
     </div>
 );
