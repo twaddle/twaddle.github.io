@@ -54,9 +54,9 @@ const Downloads = () => (
                         </div>
 
                         <div className="col-xs-12 text-center">
-                            <a href="https://github.com/twaddle/twaddle.github.io/releases/download/v1.0.0/twaddle-linux-x86.zip">32-bit</a>
+                            <a href="https://github.com/twaddle/twaddle.github.io/releases/download/v1.0.0/twaddle-linux-x86.tar.gz">32-bit</a>
                             <span> / </span>
-                            <a href="https://github.com/twaddle/twaddle.github.io/releases/download/v1.0.0/twaddle-linux-x64.zip">64-bit</a>
+                            <a href="https://github.com/twaddle/twaddle.github.io/releases/download/v1.0.0/twaddle-linux-x64.tar.gz">64-bit</a>
                         </div>
                     </div>
                 </div>
